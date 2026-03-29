@@ -170,6 +170,27 @@ jobs:
         make download -j8
         find dl -size -1024c -exec rm -f {} \;
 
+    - name: Compile host tools (fix po2lmo for OpenClash)
+      run: |
+          echo "=== Compiling host tools (luci-base and po2lmo) ==="
+          make tools/host-compile -j1 V=s || true
+          make package/luci-base/host-compile -j1 V=s || true
+          
+          # 如果 OpenClash 通过 feeds 添加，尝试编译其自带 po2lmo
+          if [ -d "feeds/OpenClash/luci-app-openclash/tools/po2lmo" ]; then
+            echo "=== Compiling po2lmo from OpenClash feed ==="
+            pushd feeds/OpenClash/luci-app-openclash/tools/po2lmo
+            make && sudo make install || true
+            popd
+          fi
+          
+          # 如果你把 OpenClash 放在 package/ 目录下，也尝试这个路径
+          if [ -d "package/luci-app-openclash/tools/po2lmo" ]; then
+            echo "=== Compiling po2lmo from package directory ==="
+            pushd package/luci-app-openclash/tools/po2lmo
+            make && sudo make install || true
+            popd
+          fi
 
     - name: Compile the firmware
       run: |

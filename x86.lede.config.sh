@@ -1894,7 +1894,7 @@ CONFIG_PACKAGE_grub2-efi=y
 #
 CONFIG_PACKAGE_autocore-x86=y
 CONFIG_PACKAGE_automount=y
-CONFIG_PACKAGE_autosamba=y
+#CONFIG_PACKAGE_autosamba is not set
 CONFIG_PACKAGE_autosamba_INCLUDE_KSMBD=y
 # CONFIG_PACKAGE_autosamba_INCLUDE_SAMBA3 is not set
 # CONFIG_PACKAGE_autosamba_INCLUDE_SAMBA4 is not set
@@ -7398,7 +7398,7 @@ CONFIG_PACKAGE_ppp-mod-pppoe=y
 # CONFIG_PACKAGE_rsyslog is not set
 # CONFIG_PACKAGE_rustdesk-server is not set
 # CONFIG_PACKAGE_safe-search is not set
-CONFIG_PACKAGE_samba36-server=y
+# CONFIG_PACKAGE_samba36-server is not set
 CONFIG_PACKAGE_SAMBA_MAX_DEBUG_LEVEL=-1
 # CONFIG_PACKAGE_samba4-admin is not set
 # CONFIG_PACKAGE_samba4-client is not set

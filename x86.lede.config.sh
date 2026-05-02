@@ -5622,8 +5622,8 @@ CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng=y
 # CONFIG_PACKAGE_luci-app-rp-pppoe-server is not set
 # CONFIG_PACKAGE_luci-app-rtbwmon is not set
 # CONFIG_PACKAGE_luci-app-runmynas is not set
-CONFIG_PACKAGE_luci-app-samba=y
-# CONFIG_PACKAGE_luci-app-samba4 is not set
+# CONFIG_PACKAGE_luci-app-samba is not set
+CONFIG_PACKAGE_luci-app-samba4=y
 # CONFIG_PACKAGE_luci-app-scutclient is not set
 # CONFIG_PACKAGE_luci-app-ser2net is not set
 # CONFIG_PACKAGE_luci-app-shadowrt is not set

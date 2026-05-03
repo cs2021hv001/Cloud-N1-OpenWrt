@@ -9,8 +9,8 @@ on:
     paths:
       - 'README.md'
       - 'ImmortalWrt.sh'
-  schedule:
-    - cron: 0 10 * * 0
+  #schedule:
+    #- cron: 0 10 * * 0
 
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt.git

@@ -5213,7 +5213,7 @@ CONFIG_PACKAGE_luci-app-accesscontrol=y
 # CONFIG_PACKAGE_luci-app-aliyundrive-fuse is not set
 # CONFIG_PACKAGE_luci-app-aliyundrive-webdav is not set
 # CONFIG_PACKAGE_luci-app-alpha-config is not set
-# CONFIG_PACKAGE_luci-app-amlogic is not set
+CONFIG_PACKAGE_luci-app-amlogic=y
 # CONFIG_PACKAGE_luci-app-amule is not set
 # CONFIG_PACKAGE_luci-app-ap-modem is not set
 # CONFIG_PACKAGE_luci-app-apinger is not set
